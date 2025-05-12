@@ -2,7 +2,7 @@
 layout: about
 title: home
 permalink: /
-subtitle: Co-founder and lead enengineer @ VIGILAN ANALYTICS Sagl. Switzerland.
+subtitle: Co-founder and lead enengineer @ VIGILANT ANALYTICS Sagl. Switzerland.
 
 # profile:
 #   align: right
