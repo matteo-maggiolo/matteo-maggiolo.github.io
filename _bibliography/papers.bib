@@ -1,20 +1,33 @@
 ---
 ---
 
-@Article{RePEc:rsk:journ5:7957638,
-  author={Matteo Maggiolo and Oleg Szehr},
-  title={{Overfitting in portfolio optimization}},
-  journal={Journal of Risk Model Validation},
-  year="2023",
-  volume={17},
-  number={3},
-  pages={1-33},
-  month={9},
-  keywords={portfolio optimization; neural network (NN); deep learning; cross validation; overfit-
-ting},
-  doi={10.21314/JRMV.2023.005},
-  abstract={In this paper we measure the out-of-sample performance of sample-based rolling-window neural network (NN) portfolio optimization strategies. We show that if NN strategies are evaluated using the holdout (trainâ€“test split) technique, then high out-of-sample performance scores can commonly be achieved. Although this phenomenon is often employed to validate NN portfolio models, we demonstrate that it constitutes a â€œfata morganaâ€ that arises due to a particular vulnerability of portfolio optimization to overfitting. To assess whether overfitting is present, we set up a dedicated methodology based on combinatorially symmetric cross-validation that involves performance measurement across different holdout periods and varying portfolio compositions (the random-asset-stabilized combinatorially symmetric cross-validation methodology). We compare a variety of NN strategies with classical extensions of the meanâ€“variance model and the 1 / N strategy. We find that it is by no means trivial to outperform the classical models. While certain NN strategies outperform the 1 / N benchmark, of the almost 30 models that we evaluate explicitly, none is consistently better than the short-sale constrained minimum-variance rule in terms of the Sharpe ratio or the certainty equivalent of returns.},
-  url={https://ideas.repec.org/a/rsk/journ5/7957638.html},
-  selected={true},
-  preview={overfitting.png}
+@article{RePEc:rsk:journ5:7957638,
+  author   = {Matteo Maggiolo and Oleg Szehr},
+  title    = {{Overfitting in portfolio optimization}},
+  journal  = {Journal of Risk Model Validation},
+  year     = {2023},
+  volume   = {17},
+  number   = {3},
+  pages    = {1-33},
+  month    = {9},
+  keywords = {portfolio optimization; neural network (NN); deep learning; cross validation; overfit-
+              ting},
+  doi      = {10.21314/JRMV.2023.005},
+  abstract = {In this paper we measure the out-of-sample performance of sample-based rolling-window neural network (NN) portfolio optimization strategies. We show that if NN strategies are evaluated using the holdout (trainâ€“test split) technique, then high out-of-sample performance scores can commonly be achieved. Although this phenomenon is often employed to validate NN portfolio models, we demonstrate that it constitutes a â€œfata morganaâ€ that arises due to a particular vulnerability of portfolio optimization to overfitting. To assess whether overfitting is present, we set up a dedicated methodology based on combinatorially symmetric cross-validation that involves performance measurement across different holdout periods and varying portfolio compositions (the random-asset-stabilized combinatorially symmetric cross-validation methodology). We compare a variety of NN strategies with classical extensions of the meanâ€“variance model and the 1 / N strategy. We find that it is by no means trivial to outperform the classical models. While certain NN strategies outperform the 1 / N benchmark, of the almost 30 models that we evaluate explicitly, none is consistently better than the short-sale constrained minimum-variance rule in terms of the Sharpe ratio or the certainty equivalent of returns.},
+  url      = {https://ideas.repec.org/a/rsk/journ5/7957638.html},
+  selected = {false},
+  preview  = {overfitting.png}
+}
+
+@misc{maggiolo2025deephedgingnonconvexitylimitations,
+  title         = {Deep Hedging Under Non-Convexity: Limitations and a Case for AlphaZero},
+  author        = {Matteo Maggiolo and Giuseppe Nuti and Miroslav Štrupl and Oleg Szehr},
+  year          = {2025},
+  eprint        = {2510.01874},
+  archiveprefix = {arXiv},
+  primaryclass  = {stat.ML},
+  abstract      = {This paper examines replication portfolio construction in incomplete markets - a key problem in financial engineering with applications in pricing, hedging, balance sheet management, and energy storage planning. We model this as a two-player game between an investor and the market, where the investor makes strategic bets on future states while the market reveals outcomes. Inspired by the success of Monte Carlo Tree Search in stochastic games, we introduce an AlphaZero-based system and compare its performance to deep hedging - a widely used industry method based on gradient descent. Through theoretical analysis and experiments, we show that deep hedging struggles in environments where the optimal action-value function is not subject to convexity constraints - such as those involving non-convex transaction costs, capital constraints, or regulatory limitations - converging to local optima. We construct specific market environments to highlight these limitations and demonstrate that AlphaZero consistently finds near-optimal replication strategies. On the theoretical side, we establish a connection between deep hedging and convex optimization, suggesting that its effectiveness is contingent on convexity assumptions. Our experiments further suggest that AlphaZero is more sample-efficient - an important advantage in data-scarce, overfitting-prone derivative markets.},
+  url           = {https://arxiv.org/abs/2510.01874},
+  preview       = {hedging.png},
+  selected      = {true}
 }
